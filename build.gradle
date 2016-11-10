@@ -19,11 +19,16 @@ apply plugin: 'docker'
 // end::plugin[]
 
 // This is used as the docker image prefix (org)
-group = 'gregturn'
+group = 'ransikafs'
 
 jar {
-    baseName = 'gs-spring-boot-docker'
+    baseName = 'spring-boot-fs'
     version =  '0.1.0'
+}
+
+docker {
+    apiUsername 'ransika'
+    apiPassword '1qaz2wsx'
 }
 
 // tag::task[]
